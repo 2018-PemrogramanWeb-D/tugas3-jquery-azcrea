@@ -1,0 +1,124 @@
+<html>
+
+<head>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script> 
+
+	$(document).ready(function(){
+
+	    $("#bot1").click(function(){
+
+	        $("div").animate({left: '550px'});
+			
+			$("div").animate({fontSize: '4.8em'});
+
+	    });
+
+	    $("#bot2").click(function(){
+
+	        $("#teks1").text("Berubah yeee");
+
+	    });
+
+	    $("#bot3").click(function(){
+
+	        $("#teks2").html("Uji Coba berhasil");
+
+	    });
+
+	    $("#bot4").click(function(){
+
+	        $("#teks3").val("6666666");
+
+	    });
+
+	  
+
+		$("#myInput").on("keyup", function() {
+
+		    var value = $(this).val().toUpperCase();
+
+		    $("#myTable tr").filter(function() {
+
+		      $(this).toggle($(this).text().toUpperCase().indexOf(value) > -1)
+
+		    });
+
+		  });
+
+
+
+	});
+
+	</script> 
+
+<style>
+table{ font-family; Arial;  width: 70%;}
+td,th,tr{ border: 0.5px solid #adffda ; text-align: center; padding: 5px; }
+</style>
+</head>
+
+<title>Tugas3</title>
+
+<body>
+	<h1>Filter Section</h1>
+	
+	<p>Tabel terlalu panjang? Cari saja lewat search field (Nama/NRP/Umur) : </p>
+	<input id = "myInput" type="text" placeholder = "Ketik disini">
+	</br> </br>
+	
+	<table>
+		<tr>
+			<th>Nama</th>
+			<th>NRP</th>
+			<th>Umur</th>
+		</tr>
+		<tbody id = "myTable">
+		<tr>
+			<td>Asep Miharja</td>
+			<td>0511340000003</td>
+			<td>20 Tahun</td>
+		</tr>
+		<tr>
+			<td>Esih Sukaelva</td>
+			<td>0511330000029</td>
+			<td>20 Tahun </td>
+		</tr>
+		<tr>
+			<td>Asian Games</td>
+			<td>0511350000035</td>
+			<td>18 Tahun </td>
+		</tr>
+		<tr>
+			<td>Selamat Hari Raya</td>
+			<td>0511350000017</td>
+			<td>17 Tahun</td>
+		</tr>
+		</tbody>
+	</table> </br> </br>
+	
+	<h2> Ini Sektor Animate </h2>
+	<button id = "bot1"> Tap to see it do the stuff </button>
+	</br>
+	</br>
+	
+	<div style=" background: lightgreen; height: 100px; width: 275px; position: relative;">GOCHA</div>
+	</br>
+	</br>
+	
+	<h3>Content Set</h3>
+	
+	<p id="teks1">TungTaraTungTung</p>
+	<p id="teks2">Mixing Alchemy Stuff</p>
+	<p>Input field: <input type = "text" id ="teks3" value=" Benar benar jangan menyesal"></p>
+	
+	<button id = "bot2"> Change the First Stuff </button>
+	<button id = "bot3"> Second Stuff As Well </button>
+	<button id = "bot4"> Don't make me </button>
+	</br> </br>
+	
+</body>
+</html>
+
